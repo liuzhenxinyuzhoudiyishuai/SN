@@ -1,33 +1,45 @@
 import Vue from 'vue' // 引入vue
 import VueRouter from 'vue-router' // 引入路由
 import Home from '@/views/Home'
-import List from '@/views/List'
-import Ranging from '@/views/Ranging'
-import ShopCar from '@/views/ShopCar'
-import My from '@/views/My'
+// import List from '@/views/List'
+// import Ranging from '@/views/Ranging'
+// import ShopCar from '@/views/ShopCar'
+// import My from '@/views/My'
+// import Login from '@/views/Login'
 
 Vue.use(VueRouter) 
 
 const routes = [
   {
     path: '/home',
-    component: Home
+    name:'Home',
+    component: () => import("../views/Home.vue"),
   },
   {
     path: '/list',
-    component: List
+    name:'List',
+    component: () => import("../views/List.vue"),
+
   },
   {
     path: '/ranging',
-    component: Ranging
+    name:'Ranging',
+    component: () => import("../views/Ranging.vue"),
   },
   {
     path: '/shopcar',
-    component: ShopCar
+    name:'ShopCar',
+    component: () => import("../views/ShopCar.vue"),
   },
   {
     path: '/my',
-    component: My
+    name:'My',
+    component: () => import("../views/My.vue"),
+  },
+  {
+    path: '/login',
+    name:'Login',
+    component: () => import("../views/Login.vue"),
   },
   {
     path: '*',
