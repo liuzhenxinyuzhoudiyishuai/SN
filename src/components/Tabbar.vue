@@ -18,6 +18,7 @@
   }
   nav{
   width: 100%;
+  background: white;
   position: fixed;
   bottom: 0px;
   left: 0px;

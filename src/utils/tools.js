@@ -1,4 +1,4 @@
-export const serverUrl = "http://localhost:3009";
+export const serverUrl = "http://api.cat-shop.penkuoer.com";
 
 export function isLogined() {
   if (localStorage.getItem("token")) {

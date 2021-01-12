@@ -10,8 +10,8 @@
       </h2>
       <number v-if="isShow"></number>
       <id v-else></id>
-      <b v-if="isShow" @click="isShow=!isShow">账号密码登陆</b>
-      <b v-else @click="isShow=!isShow">验证码登录</b>
+      <b v-if="isShow" @click="isShow=!isShow">去登录</b>
+      <b v-else @click="isShow=!isShow">去注册</b>
     </div>
     <div>
       <p class="txt1">其他登录方式</p>

@@ -13,11 +13,6 @@
     <button class="btn-login">登录</button>
   </div> -->
   <div class="reg">
-    <img
-      style="width:70%;"
-      src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2388634225,2417364686&fm=26&gp=0.jpg"
-      alt=""
-    />
     <van-form @submit="onSubmit">
       <van-field
         v-model="username"
@@ -36,11 +31,10 @@
       />
       <div style="margin: 16px;">
         <van-button round block type="info" native-type="submit">
-          提交
+          登录
         </van-button>
       </div>
     </van-form>
-    <router-link :to="{ name: 'Reg' }">没有账号,我要注册</router-link>
   </div>
 </template>
 <script>
