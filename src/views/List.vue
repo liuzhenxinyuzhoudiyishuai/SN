@@ -196,6 +196,10 @@ export default {
 .header {
   height: 40px;
   width: 100%;
+<<<<<<< HEAD
+=======
+  background: ;
+>>>>>>> 0f005d8a475a37df8fb9a39e7e0b070f3d9823cf
   z-index: 9999;
   margin-bottom: 3px;
   box-shadow: 0 2px 2px rgba(5, 16, 20, 0.24), 0 0 4px rgba(10, 16, 20, 0.12);
@@ -203,7 +207,11 @@ export default {
   justify-content: space-around;
   overflow: hidden;
   align-items: center;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 0f005d8a475a37df8fb9a39e7e0b070f3d9823cf
 
 .header-left {
   color: black;

@@ -1,33 +1,38 @@
 <template>
-  <div>
+  <div id="app">
     <tabbar></tabbar>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import tabbar from './components/Tabbar'
+import tabbar from "./components/Tabbar";
 export default {
   data() {
-    return {
-      
-    }
+    return {};
   },
   components: {
-    tabbar
-  }
-}
+    tabbar,
+  },
+};
 </script>
 
 <style lang="scss">
-*{
-  margin: 0;
-  padding: 0;
-}
-html{
+html,
+body,
+#app {
   height: 100%;
+  width: 100%;
 }
-li{
+#app {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  overflow: auto;
+}
+li {
   list-style: none;
 }
 </style>
